@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Fauna+One&display=swap');
+
+/* Base Styles */
+html {
+    scroll-behavior: smooth;
+    background-color: #b5a26d;
+}
+
+body {
+    font-family: 'Fauna One', sans-serif;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Book list styles */
+.booksList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.bookItem {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Suggested Books Style */
+/* Table Style */
+table {
+    font-family: 'Cinzel', serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:first-child {
+    background-color: #d9c6a0;
+}
+
+/* Buttons Style */
+nav button {
+    background-color: #d9c6a0;
+    color: black;
+    font-family: 'Cinzel', serif;
+    font-size: large;
+    cursor: pointer;
+}
+
+.deleteBtn {
+    color: red;
+    font-size: large;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Style for forms */
+form {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+label {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+form .closeBtn {
+    background-color: transparent;
+    border: 1px solid red;
+    cursor: pointer;
+    float: right;
+    color: red;
+    font-size: large;
+}
+
+/* Pop-up forum */
+.form-popup {
+    visibility: hidden;
+    background-color: #907e4d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Captain America Pop-up Styles */
+.cap-popup {
+    visibility: hidden;
+    position: fixed;
+    z-index: 100; /* Higher z-index to be on top of everything */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cap-popup-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.close-cap-popup {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-cap-popup:hover,
+.close-cap-popup:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

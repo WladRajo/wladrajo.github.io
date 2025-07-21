@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations - Book Club</title>
+    <link rel="icon" href="/Images/read.png" type="image/x-icon">
+    <link rel="stylesheet" href="PagesStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Fauna+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="buttons">
+        <button id="addBookBtn">Add Book</button>
+        <button id="suggestBookBtn" onclick="showPopUp()">Suggest new book</button>
+    </nav>
+
+    <h1>Books</h1>
+    <div class="booksList">
+        <div class="bookItem">
+            <img id="Rimg" src="/Images/50Shades.jpeg" alt="Book cover">
+            <h2 id="Rtitle">50 Shades</h2>
+            <p id="Rauthor"><em>Whatever</em></p>
+            <p id="Rgenre">Yk what</p>
+            <input type="checkbox" name="status" id="Rstatus" onclick="change_color()"> Finished
+            <br>
+            <input type="checkbox" name="Astatus" id="AbandonnedStatus" onclick="cancel_book()"> Abandonned
+        </div>
+    </div>
+
+    <h1>Suggested Books</h1>
+    <table id="booksTable">
+        <tr id="tableHeader">
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Submitted by</th>
+            <th class="deleteBtn" style="cursor: text;">DELETE</th>
+        </tr>
+    </table>
+
+    <br>
+
+    <div class="form-popup" id="myForm">
+        <form>
+            <button type="button" class="closeBtn" onclick="closePopUp()">X</button>
+
+            <br>
+
+            <label for="title">Title:</label>
+            <input type="text" name="t" id="titleInp"/>
+
+            <br>
+
+            <label for="author">Author:</label>
+            <input type="text" name="a" id="authorInp"/>
+
+            <br>
+
+            <label for="genre">Genre:</label>
+            <input type="text" name="g" id="genreInp"/>
+
+            <br>
+
+            <label for="submit">Your name:</label>
+            <input type="text" name="s" id="submitInp"/>
+
+            <br>
+
+            <input type="button" value="Submit" id="submitBtn" onclick="testResults()"/>
+        </form>
+    </div>
+
+    <div class="cap-popup" id="captainAmericaPopup">
+        <div class="cap-popup-content">
+            <span class="close-cap-popup" onclick="closeCaptainAmericaPopup()">&times;</span>
+            <img src="/Images/cap.jpg" alt="Captain America" style="width:100%;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
