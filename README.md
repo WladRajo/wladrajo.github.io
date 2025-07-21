@@ -11,5 +11,5 @@ Build a website for a personal book club.
 
 <h2>Used tech:</h2>
 HTML; CSS; JS
-*Node.js? MongoDB?*
+<em>Node.js? MongoDB?</em>
 Gemini/Copilot (for CSS styles)
