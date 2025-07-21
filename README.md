@@ -1,14 +1,15 @@
 # wladrajo.github.io
-First Full-Stack project.
+<h1>First Full-Stack project.</h1>
 
-**Project:**
+<h2>Project:</h2>h2>
 Build a website for a personal book club.
-**Goal:**
+
+<h2>Goal:</h2>
 - Display read books and allow users to suggests new books.
 - Allow users to share their own stories on the website.
 - Users can cast actors/actresses as book/movie characters.
 
-**Used tech:**
+<h2>Used tech:</h2>
 HTML; CSS; JS
 *Node.js? MongoDB?*
 Gemini/Copilot (for CSS styles)
