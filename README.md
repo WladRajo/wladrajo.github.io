@@ -1,7 +1,7 @@
 # wladrajo.github.io
 <h1>First Full-Stack project.</h1>
 
-<h2>Project:</h2>h2>
+<h2>Project:</h2>
 Build a website for a personal book club.
 
 <h2>Goal:</h2>
