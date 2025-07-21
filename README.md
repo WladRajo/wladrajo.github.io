@@ -5,9 +5,9 @@
 Build a website for a personal book club.
 
 <h2>Goal:</h2>
-- Display read books and allow users to suggests new books.
-- Allow users to share their own stories on the website.
-- Users can cast actors/actresses as book/movie characters.
+<li>Display read books and allow users to suggests new books.</li>
+<li>Allow users to share their own stories on the website.</li>
+<li>Users can cast actors/actresses as book/movie characters.</li>
 
 <h2>Used tech:</h2>
 HTML; CSS; JS
